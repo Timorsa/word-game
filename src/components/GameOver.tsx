@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-	IntroContainer,
+	PageContainer,
 	MainHeading,
 	SecondaryHeading,
 	MainButton,
@@ -11,7 +11,7 @@ const GameOver = () => {
 	const [name, setName] = useState<string>('');
 	const [phone, setPhone] = useState<string>('');
 	return (
-		<IntroContainer>
+		<PageContainer>
 			<MainHeading>Game Over</MainHeading>
 			<SecondaryHeading>your score : 250 </SecondaryHeading>
 			<TextFormInput
@@ -32,7 +32,7 @@ const GameOver = () => {
 			<MainButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
 				New Game
 			</MainButton>
-		</IntroContainer>
+		</PageContainer>
 	);
 };
 

@@ -3,6 +3,7 @@ import { below } from '../../theme';
 
 export const MainHeading = styled.h1`
 	font-size: 4.8rem;
+	margin: 1.5rem;
 	text-align: center;
 	font-family: ${({ theme: { fonts } }) => fonts.branding};
 	color: ${({
@@ -34,4 +35,15 @@ export const SmallHeading = styled.h3`
 			colors: { secondaryBlack },
 		},
 	}) => secondaryBlack};
+`;
+
+export const SmallGameHeading = styled(SmallHeading)`
+	font-size: 2.2rem;
+	font-family: ${({ theme: { fonts } }) => fonts.branding};
+	${below.medium`
+		margin: .2rem;
+		font-size: 1.5rem;
+		padding: 1rem;
+
+	`};
 `;
